@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <%- include('../views/partials/head.ejs') %>
+    </head> 
+
+<body class="body">
+    <h1>AGREGA PRODUCTOS AQUI:</h1>
+    <form id="formDescription" class="container d-flex flex-column w-25">
+        <input name="name" id="formName" placeholder="Nombre del producto" class="mt-1" required>
+        <input name="price" id="formPrice" placeholder="Precio"  class="mt-1" required>
+        <input name="thumbnail" id="formTumbnail" placeholder="Link de la imagen"  class="mt-1" required>
+        <button type="submit" class="btn btn-primary w-25 mt-1">Enviar</button>
+    </form>
+    <div class="d-flex justify-content-center my-3 flex-wrap" id="productsContainer">
+    </div>
+
+    <h1>CHAT</h1>
+    <form id="formChat">
+        <input name="email" id="formEmail" placeholder="Escribe tu email" class="mt-1" type="email" required>
+        <input name="message" id="formMessage" placeholder="Escribe tu mensaje"  class="mt-1" required>
+        <button type="submit" class="btn btn-primary w-25 mt-1">Enviar</button>
+    </form>    
+    <div id="chat"></div>
+
+
+
+    <%- include('../views/partials/Scripts') %>
+
+</body>
+</html>
